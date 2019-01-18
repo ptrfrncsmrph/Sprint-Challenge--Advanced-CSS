@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive design approach will typically have a server that delivers different views for different devices, so the actual content and layout may change depending on the user's device. Responsive design instead makes use of the same layout but uses media queries to dynamically change the view at different breakpoints.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first design starts with a layout designed for narrow mobile views and adds successive breakpoints for minimum device widths on top of that. Desktop does the opposite: starting with a wide desktop view and adding queries for maximum device width to target smaller devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Since the default browser font size is 16px in normal viewing mode, setting a font-size of 62.5% resets the root font size for the `html` to 10px making calculations using `rem` easier.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way of automating some parts of the styling workflow. By using a preprocessor you can use a superset of CSS (such as SCSS or LESS) to do things that you can't do in plain CSS. This reduces a lot of boilerplate for things like media queries, reduces repetition by introducing variables, and allows for organization and modularization by allowing you to split your styles across many different files to be compiled into a single CSS stylesheet.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like the modularity of being able to import smaller files to compile into a single CSS stylesheet. This allows me to break things up and organize styles in a coherent way (instead of dealing with 1000+ line CSS files). This actually was also the thing that gave me most trouble before I figured out how to navigate the different files; it's very easy to forget in which file a certain query selector can be found.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
