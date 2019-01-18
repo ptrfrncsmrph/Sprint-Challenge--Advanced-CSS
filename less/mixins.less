@@ -11,9 +11,24 @@
   grid-gap: @gap;
 }
 
-// .wrapper(800px)
+// .wrapper(800px);
 .wrapper(@width) {
   max-width: @width;
   width: 100%;
   margin: 0 auto;
+}
+
+// .button(@btn-bg-color, @wild-sand, true);
+.button(@bg-color, @text-color, @invert) {
+  display: inline-block;
+  font-size: 1.8rem;
+  border: 1px solid @bg-color;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  background: @bg-color;
+  color: @text-color;
+  &:hover when (@invert = true) {
+    background: @text-color;
+    color: @bg-color;
+  }
 }
