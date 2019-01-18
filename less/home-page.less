@@ -5,6 +5,9 @@
   .intro {
     img {
       border-radius: 5px;
+      @media @phone {
+        width: 100%;
+      }
     }
 
     h2 {
@@ -27,6 +30,13 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        margin: 2rem;
+        width: 100%;
+        +img {
+          display: none;
+        }
+      }
     }
   }
 
@@ -35,6 +45,9 @@
 
     h3 {
       margin-top: 11px;
+      @media @phone {
+        margin-top: 4px;
+      }
     }
 
     p {
@@ -48,7 +61,11 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      padding: 0;
+      margin: 20px 4%;
+      flex-direction: column-reverse;
+    }
     .walk-text {
       width: 50%;
 
@@ -63,6 +80,14 @@
       .btn {
         .button(@btn-bg-color, @wild-sand, true);
       }
+      @media @phone {
+        width: 100%;
+        .btn {
+          display: block;
+          text-align: center;
+          padding: 2.5rem 0;
+        }
+      }
     }
 
     .walk-img {
@@ -73,6 +98,10 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @phone {
+        margin: 2rem 0;
+        width: 100%;
       }
     }
   }
