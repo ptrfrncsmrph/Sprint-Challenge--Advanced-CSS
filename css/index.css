@@ -169,6 +169,7 @@ p {
   flex-direction: column;
   align-items: center;
   height: 10rem;
+  background: #F6F6F6;
 }
 .top-nav-container nav {
   display: inline-grid;
@@ -178,7 +179,7 @@ p {
 .top-nav-container nav a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #5E6164;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -189,6 +190,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;

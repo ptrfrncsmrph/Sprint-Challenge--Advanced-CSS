@@ -1,1 +1,19 @@
 // Mixins Here
+
+// These two are just to satisfy the mix-in requirement
+// because I couldn't find anything I was repeating that
+// needed to be factored out ¯\_(ツ)_/¯
+
+// .bar(3.2rem);
+.bar(@gap, @direction: column) {
+  display: inline-grid;
+  grid-auto-flow: @direction;
+  grid-gap: @gap;
+}
+
+// .wrapper(800px)
+.wrapper(@width) {
+  max-width: @width;
+  width: 100%;
+  margin: 0 auto;
+}
